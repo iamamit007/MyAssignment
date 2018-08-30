@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+              android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+
+                    android:id="@+id/bookmaked"
+                    android:visibility="gone"
+
+                    android:src="@mipmap/ic_bookmark"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+                <ImageView
+
+                    android:id="@+id/del_bookmaked"
+                    android:visibility="gone"
+                    android:layout_marginRight="8dp"
+                    android:src="@mipmap/ic_del"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_centerInParent="true"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_weight="20"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#FFFFFF"/>
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_pic"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="20"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                shimmer:duration="800">
+                <ImageView
+                    android:id="@+id/repo_image"
+                    android:layout_gravity="center"
+                    android:src="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/artist_image"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@mipmap/ic_launcher"-->
+                <!--android:layout_weight="20"-->
+                <!--android:layout_width="0dip"-->
+                <!--android:layout_height="70dp" />-->
+            <LinearLayout
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="80"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:weightSum="50"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/repository_name"
+                        android:textStyle="bold"
+                        android:text="Arin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/repository_full_name"
+                        android:textStyle="bold"
+                        android:text="Arijit  gggggggggggg"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="2dp"
+                    android:weightSum="50"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginRight="1dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:text="Watcher Count"
+                        android:layout_weight="20"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/watchers_count"
+                        android:layout_marginLeft="1dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:text="012456789"
+                        android:layout_weight="30"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="2dp"
+                    android:weightSum="50"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginRight="1dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:text="Score"
+                        android:layout_weight="15"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/score"
+                        android:layout_marginLeft="1dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:text="012456789"
+                        android:layout_weight="35"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

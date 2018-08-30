@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.Splash">
+    <ImageView
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/github"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="220dp"
+       android:layout_centerHorizontal="true"
+        android:id="@+id/progreassIndicator2"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        app:lottie_fileName="thinking_lamp.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

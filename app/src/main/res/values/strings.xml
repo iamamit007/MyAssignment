@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Assignment</string>
+    <string name="SERVER_URL">"https://api.github.com</string>
+    <string name="api_key">fa2e62987b8c372e16daa60331164d12</string>
+    <string name="list_of_contributors">https://api.github.com/repos/google/skia/contributors</string>
+    <string name="contributors_details">https://api.github.com/repos/google/skia/contributors</string>
+    <!--<string name="list_of_repo">https://api.github.com/search/repositories?q=skia&order=desc</string>-->
+
+</resources>

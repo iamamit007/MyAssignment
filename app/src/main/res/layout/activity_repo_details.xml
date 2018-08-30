@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RepoDetailsActivity">
+        <RelativeLayout
+         android:background="@color/black"
+            android:id="@+id/container1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ImageView
+                android:id="@+id/id_artist_img_large"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/place_man"
+               />
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+
+                    android:id="@+id/repo_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:maxLines="2"
+                    android:text="My awesome title"
+                    />
+            <TextView
+                android:autoText="true"
+                android:autoSizeTextType="uniform"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/id_repo_org"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:maxLines="2"
+                android:text="My awesome title"
+                android:tag="parallax=0.0" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+  <RelativeLayout
+      android:id="@+id/url_con"
+      android:background="@color/colorPrimary"
+      android:layout_below="@+id/container1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <LinearLayout
+
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="8dp"
+          android:gravity="center"
+          android:id="@+id/controler_con"
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <ImageView
+             android:id="@+id/lm_btn"
+              android:src="@mipmap/ic_git"
+              android:layout_width="45dp"
+              android:layout_height="45dp" />
+
+         <TextView
+             android:layout_marginLeft="15dp"
+             android:textColor="#FFFFFF"
+             android:text="Click here to open"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+
+
+
+      </LinearLayout>
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/txt_con"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/url_con"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/id_watcher_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:text="Description "
+            />
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></LinearLayout>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:id="@+id/id_summ"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLines="10"
+            android:text=""          />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:id="@+id/label_con"
+        android:layout_below="@id/txt_con"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:text="Contributors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></LinearLayout>
+    </LinearLayout>
+
+        <GridView
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/label_con"
+            android:id="@+id/contributors"
+            android:numColumns="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></GridView>
+
+
+        <!-- ...your usual views... -->
+
+</RelativeLayout>
